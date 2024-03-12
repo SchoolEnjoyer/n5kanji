@@ -133,7 +133,10 @@ elif page == "3":
 while True:
     os.system("clear")
     keys = list(kanji.keys())
-    key = random.randint(keys[0], keys[-1])
+    try:
+        key = random.choice(list(kanji.keys()))
+    except:
+        pass
     print(Fore.YELLOW + str(kanji[key][0]))
     input()
     input(Fore.WHITE + str(kanji[key][1]))
