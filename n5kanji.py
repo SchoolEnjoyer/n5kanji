@@ -2,6 +2,7 @@
 import os, colorama, random
 colorama.init()
 from colorama import Fore
+os.system("clear")
 page = input("Enter Kanji Page to learn 1-3: ")
 if page == "1":
 	kanji = {
@@ -130,6 +131,7 @@ elif page == "3":
 	119: ['道', 'みち', '', 'Droga'],
 	120: ['駅', '', 'エキ', 'Dworzec']}
 while True:
+    os.system("clear")
     keys = list(kanji.keys())
     key = random.randint(keys[0], keys[-1])
     print(Fore.YELLOW + str(kanji[key][0]))
@@ -137,4 +139,3 @@ while True:
     input(Fore.WHITE + str(kanji[key][1]))
     input(Fore.WHITE + str(kanji[key][2]))
     input(Fore.WHITE + str(kanji[key][3]))
-    os.system("cls||clear")
