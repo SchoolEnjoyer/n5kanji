@@ -139,3 +139,7 @@ while True:
     input(Fore.WHITE + str(kanji[key][1]))
     input(Fore.WHITE + str(kanji[key][2]))
     input(Fore.WHITE + str(kanji[key][3]))
+    try:
+        del kanji[key]
+    except:
+        exit()
